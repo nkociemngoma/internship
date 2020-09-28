@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css">
+    </head>
+<body>
+    <header>
+        <div className="container" style="background-color: azure; margin-top: auto; padding-bottom: 20px;">
+            
+                <img src ="logo-black.png" style="margin-left: auto; margin-right: 50%; padding-left: 33%;"/>
+                <h2 style ="text-align: center; font-family:Times New Roman, Times, serif;">Redefining Information Security.</h2>
+            
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#" onclick="myFunction('home')">Home</a></li>
+                <li><a href="#" onclick="myFunction('about')">About</a></li>
+                <li><a href="#" onclick="myFunction('gallery')">Gallery</a></li>
+                <li><a href="#" onclick="myFunction('contact')">Contact Us</a></li>
+            </ul>
+            
+
+        </nav>
+
+        <h1 style ="text-align: center; font-family:Arial, Helvetica, sans-serif;">Welcome To CyberSec Clinique</h1>
+    </header>
+
+    <section>
+        <div id="home" style="display: block;">
+            <div class="container">
+                <img src="img3.png" alt="Cyber Security" style="width: 100%;">
+                <div class="centered">Welcome To the Age Of Resilience</div>
+            </div>
+        </div>
+
+        <div id="about" style="display: none;">
+            <h2 style ="text-align: center; font-family:Arial, Helvetica, sans-serif;">The Story Behind The Story</h2>
+            <div >
+                <img src="img3.png" alt="Cyber Security" style="width: 100%;">
+                <p class="abouttext">At CyberSec Clinique, we pride ourselves in providing you our clients with the best cyber security solutions in modern times.
+                    We were established not so long ago and the tech industry and the whole world has witnessed our rise to prominence. We started as a web development company with just a few 
+                    individuals who are the founding members of the company in 2008. We then branced out into cyber security which is where we found comfort and an opportunity to grow into what we are today.
+
+                </p>
+            </div>
+        </div>
+
+        <div id="gallery" style="display: none;">
+            <div class="gallery">
+                <a target="_blank" href="img1.jfif">
+                  <img src="img1.jfif" alt="Office" width="1200" height="800">
+                </a>
+                <div class="desc">A peek into our beautiful workspace</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img2.jfif">
+                  <img src="img2.jfif" alt="workspace" width="1200" height="800">
+                </a>
+                <div class="desc">Where the magic happens, where ideas are born</div>
+              </div>
+
+        </div>
+
+        <div id="contact" style="display: none;">
+            <h2 style ="text-align: center; font-family:Arial, Helvetica, sans-serif;">Find Our Contact Details Here</h2>
+            <p style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: large;">
+                Twitter: <a href="https://twitter.com/cyberseccliniq?lang=en" style="color: skyblue;">Cybersec-Clinique</a>
+            </br>
+                Email: abc@Cybersec-Clinique.co.za
+            </br>
+                Location: Midrand, South Africa
+            </br>
+                Website: <a href="cybersec-clinique.co.za" style="color: skyblue;">Cybersec-Clinique.co.za</a>
+
+            </p>
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        <p>&copy Copyright 2020 CyberSec Clinique, All Rights Reserved</p>
+      </footer>
+
+    <script>
+        function myFunction(divID) {
+          var home = document.getElementById("home");
+          var about = document.getElementById("about");
+          var gallery = document.getElementById("gallery");
+          var contact = document.getElementById("contact");
+          
+
+          switch(divID){
+            case "home":
+                home.style.display = "block";
+                about.style.display = "none";
+                gallery.style.display = "none";
+                contact.style.display = "none";
+                break;
+                
+            case "about":
+                about.style.display = "block";
+                home.style.display = "none";
+                gallery.style.display = "none";
+                contact.style.display = "none";
+                break;
+
+            case "gallery":
+                gallery.style.display = "block";
+                home.style.display = "none";
+                about.style.display = "none";
+                contact.style.display = "none";
+                break;
+
+            case "contact":
+                home.style.display = "none";
+                about.style.display = "none";
+                gallery.style.display = "none";
+                contact.style.display = "block";
+                break;
+          }
+          
+          
+        }
+        </script>
+
+</body>
+
+</html>

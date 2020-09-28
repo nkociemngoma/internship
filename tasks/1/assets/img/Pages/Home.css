@@ -1,0 +1,62 @@
+.Home {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+
+  
+.sidenav {
+    height: 100%;
+    width: 20%; 
+    position: absolute;
+    z-index: 1; 
+    top: 1; 
+    left: 0;
+    background-color: lightgray; 
+     
+    width : "250px";
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    overflow: hidden;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  .sidenav a:hover {
+    color: lightsteelblue;
+  }
+
+  
+  
+  #main {
+    float: left;
+    margin-left: 20%;
+    padding: 20px;
+  }
+
+  .footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color:black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
